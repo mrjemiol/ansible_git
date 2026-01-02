@@ -1,0 +1,11 @@
+[cisco]
+192.168.0.128
+192.168.0.195
+192.168.0.171
+
+[cisco:vars]
+# Tell the libssh library exactly which legacy algorithms to use
+ansible_libssh_macs=hmac-sha1
+ansible_libssh_kex=diffie-hellman-group14-sha1
+ansible_libssh_host_key_algorithms=ssh-rsa
+ansible_libssh_ciphers=aes128-cbc,aes256-cbc
